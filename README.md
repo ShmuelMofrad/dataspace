@@ -1,6 +1,7 @@
 # dataspace
 
-This is a Postgresql on VSCode development environment.
+if you want to learn SQL without pain on the cloud, this dataspace is for you.
+This is a Postgresql and VSCode development environment on the Docker.
 
 ## Tools
 
