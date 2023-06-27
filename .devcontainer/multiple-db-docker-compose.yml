@@ -1,0 +1,34 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    container_name: db-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+
+  db-test:
+    image: postgres
+    container_name: db-test
+    restart: always
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+
+  db-multi:
+    image: postgres
+    container_name: db-multiple
+    restart: always
+    environment:
+      POSTGRES_DB: db1
+      POSTGRES_USER: userdb
+      POSTGRES_PASSWORD: userdb
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
